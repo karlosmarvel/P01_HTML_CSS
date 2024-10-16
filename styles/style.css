@@ -1,0 +1,154 @@
+/* Importa fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap'); /* Importa a fonte Krona One */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* Importa as fontes Krona One e Montserrat com opções de peso e estilo */
+
+/* Define variáveis de cores globais para fácil reutilização */
+:root {
+    --cor-primaria: #00FA9A; /* Define a cor verde claro como a primária */
+    --cor-secundaria: #F6F6F6; /* Define a cor branca clara como a secundária */
+    --cor-terciaria: #22D4FD; /* Define a cor azul claro como a terciária */
+}
+
+/* Remove margens e espaçamentos internos padrões de todos os elementos e ajusta o box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui o padding e a borda dentro da largura/altura dos elementos */
+}
+
+/* Define a altura total para o html e o body para preencher 100% da tela */
+html, body {
+    height: 100%;
+}
+
+/* Estilo geral para o corpo da página */
+body {
+    background-color: black; /* Define o fundo como preto */
+    color: var(--cor-secundaria); /* Define a cor do texto como branco claro */
+}
+
+/* Estiliza o título principal (h1) */
+h1 {
+    font-weight: bold; /* Aplica negrito ao texto do título */
+    padding: 10px; /* Espaçamento interno de 10px ao redor do título */
+    font-size: 2.25rem; /* Define o tamanho da fonte para 36px (2.25rem) */
+    font-family: "Krona One", sans-serif; /* Usa a fonte Krona One */
+}
+
+/* Estiliza textos de destaque, aplicando a cor verde claro */
+.Destaque_ONS_SIN, .Destaque_Titulo_Rede {
+    color: var(--cor-primaria); /* Aplica o verde claro */
+}
+
+.Destaque_Titulo_Rede {
+    border: 1px solid var(--cor-primaria); /* Adiciona uma borda verde claro ao redor do título */
+    padding: 5px; /* Espaçamento interno de 5px */
+}
+
+/* Apresenta o conteúdo principal usando layout flexível */
+.Apresentacao_Conteudo {
+    padding: 4% 4%; /* Espaçamento interno de 4% em todos os lados */
+    display: flex; /* Usa o Flexbox para organizar o conteúdo */
+    gap: 82px; /* Espaçamento de 82px entre os elementos */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    justify-content: space-between; /* Distribui os elementos com espaço entre eles */
+}
+
+/* Define uma seção com largura fixa de 50% da tela */
+.Estilizando_Secao {
+    width: 50%; /* Define a largura da seção como 50% */
+}
+
+/* Estiliza parágrafos */
+.Estilizando_Paragrafo {
+    font-size: 1.5rem; /* Define o tamanho da fonte como 24px (1.5rem) */
+    font-family: "Montserrat", sans-serif; /* Usa a fonte Montserrat */
+}
+
+/* Estiliza links organizados em coluna */
+.Estilizando_Links {
+    display: flex; /* Usa Flexbox */
+    flex-direction: column; /* Organiza os links em uma coluna */
+    align-items: center; /* Centraliza os links horizontalmente */
+    gap: 15px; /* Espaçamento de 15px entre os links */
+}
+
+/* Estiliza os botões de link */
+.Link_Botoes {
+    width: 50%; /* Define a largura como 50% do contêiner */
+    text-align: center; /* Centraliza o texto no botão */
+    border-radius: 10px; /* Arredonda os cantos do botão */
+    font-size: 1.5rem; /* Define o tamanho da fonte para 24px (1.5rem) */
+    padding: 20px 0; /* Define espaçamento interno de 20px no topo e na parte inferior */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-family: "Montserrat", sans-serif; /* Usa a fonte Montserrat */
+    color: var(--cor-secundaria); /* Define a cor do texto como branco claro */
+    border: 2px solid var(--cor-terciaria); /* Adiciona uma borda azul claro */
+    justify-content: center; /* Centraliza o conteúdo dentro do botão */
+    gap: 20px; /* Espaçamento entre os elementos dentro do botão */
+}
+
+/* Efeito visual quando o mouse passa sobre os botões */
+.Link_Botoes:hover {
+    background-color: #272727; /* Muda o fundo para cinza escuro ao passar o mouse */
+}
+
+/* Estiliza a apresentação de links */
+.apresentacao_links {
+    font-family: "Montserrat", sans-serif; /* Usa a fonte Montserrat */
+}
+
+/* Estiliza o rodapé */
+.Rodape {
+    padding: 24px; /* Adiciona espaçamento interno de 24px */
+    color: black; /* Define a cor do texto como preto */
+    background-color: var(--cor-terciaria); /* Fundo do rodapé com cor azul claro */
+    text-align: center; /* Centraliza o texto */
+    font-family: "Montserrat", sans-serif; /* Usa a fonte Montserrat */
+    font-size: 1.5rem; /* Define o tamanho da fonte como 24px (1.5rem) */
+    font-weight: 400; /* Define o peso da fonte como regular */
+}
+
+/* Estiliza links no menu do cabeçalho */
+.cabecalho_menu_links {
+    font-family: "Montserrat", sans-serif; /* Usa a fonte Montserrat */
+    font-size: 1.5rem; /* Define o tamanho da fonte como 24px (1.5rem) */
+    font-weight: 600; /* Aplica peso de fonte negrito */
+    color: var(--cor-terciaria); /* Aplica a cor azul claro ao texto */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+/* Estiliza a seção do cabeçalho */
+.cabecalho {
+    padding: 2% 0% 0% 4%; /* Espaçamento interno de 2% no topo e 4% à esquerda */
+}
+
+/* Estiliza o menu do cabeçalho com layout flexível */
+.cabecalho_menu {
+    display: flex; /* Usa Flexbox para organizar os itens do menu */
+    gap: 80px; /* Define um espaçamento de 80px entre os itens do menu */
+}
+
+/* Define o tamanho da imagem principal */
+.Imagem_Principal {
+    width: 50%; /* Define a largura como 50% do contêiner */
+}
+
+/* Ajustes de design responsivo para telas menores */
+@media (max-width: 1200px) {
+
+    .Apresentacao_Conteudo {
+        flex-direction: column-reverse; /* Alinha o conteúdo em uma coluna invertida */
+        padding: 5%; /* Aumenta o espaçamento interno para 5% */
+    }
+    .cabecalho {
+        padding: 10%; /* Aumenta o espaçamento interno no cabeçalho para 10% */
+    }
+    .cabecalho_menu {
+        justify-content: center; /* Centraliza o menu na tela */
+    }
+
+    .Estilizando_Secao {
+        width: auto; /* Define a largura como automática para se ajustar ao tamanho da tela */
+    }
+}
